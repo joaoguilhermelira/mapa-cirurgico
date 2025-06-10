@@ -6,15 +6,18 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Markmap</title>
 <style>
-* {
-  margin: 0;
-  padding: 0;
-}
-#mindmap {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-}
+  /* Define o fundo branco para o corpo da página */
+  body {
+    background-color: white;
+    margin: 0;
+    overflow: hidden;
+  }
+  /* Define o fundo branco TAMBÉM para o mapa em si (SVG) */
+  svg {
+    background-color: white; /* <<< REFORÇO ADICIONADO AQUI */
+    width: 100vw;
+    height: 100vh;
+  }
 </style>
 <style>.mm-toolbar:hover {--un-border-opacity:1;border-color:rgb(161 161 170 / var(--un-border-opacity));
   }
