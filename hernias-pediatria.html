@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
+<style>
+  /* Regra de fundo branco forçada para o corpo e para o mapa */
+  body, svg {
+    background-color: white !important;
+  }
+
+  /* Estilos de layout que já funcionaram */
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
+  svg {
+    width: 100vw;
+    height: 100vh;
+  }
+</style>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Markmap</title>
-<style>
-  /* Define o fundo branco para o corpo da página */
-  body {
-    background-color: white;
-    margin: 0;
-    overflow: hidden;
-  }
-  /* Define o fundo branco TAMBÉM para o mapa em si (SVG) */
-  svg {
-    background-color: white; /* <<< REFORÇO ADICIONADO AQUI */
-    width: 100vw;
-    height: 100vh;
-  }
-</style>
 <style>.mm-toolbar:hover {--un-border-opacity:1;border-color:rgb(161 161 170 / var(--un-border-opacity));
   }
   .mm-toolbar svg {display:block;
